@@ -1,0 +1,36 @@
+/* ScrollReveal.css */
+.scroll-reveal {
+    margin: 0;
+    padding: 0;
+    perspective: 1000px; /* Enables 3D transforms */
+  }
+  
+  .scroll-reveal-text {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1em;
+  }
+  
+  .word {
+    display: inline-block;
+    transform-style: preserve-3d; /* Enables 3D transforms for children */
+    backface-visibility: hidden; /* Prevents flickering */
+    will-change: transform, opacity, filter;
+    white-space: pre; /* Preserves spaces */
+  }
+  
+  /* Optional: Add some visual enhancements */
+  .scroll-reveal-enhanced {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  /* For better performance on mobile */
+  @media (max-width: 768px) {
+    .word {
+      will-change: opacity; /* Reduce transforms on mobile for better performance */
+    }
+  }

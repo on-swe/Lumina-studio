@@ -1,0 +1,50 @@
+
+
+# Node modules (handled by pnpm via symlinks, still ignore)
+node_modules/
+
+# pnpm store (can be global or local)
+.pnpm-debug.log*
+
+# Next.js build output
+.next/*
+.next/
+out/
+portfolio/
+# Vercel (if you're deploying with it)
+.vercel/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files (contain secrets, don’t track in git)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor/IDE settings
+.vscode/
+.idea/
+
+# macOS/Windows system files
+.DS_Store
+Thumbs.db
+
+# Jest or test coverage
+coverage/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Optional: static export directory
+dist/
+
+
+pnpm-lock.yaml
+.env
