@@ -516,52 +516,52 @@ class App {
 
     const defaultItems = [
         {
-          image: `/services/service-dev-1.png`,
-          text: "Bridge",
+          image: `https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+          text: "Wedding Photography",
         },
         {
-          image:`/services/service-dev-2.png`,
-          text: "Desk Setup",
+          image: `https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80`,
+          text: "Portrait Sessions",
         },
         {
-          image: `/services/service-dev-3.png`,
-          text: "Waterfall",
+          image: `https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80`,
+          text: "Event Coverage",
         },
         {
-          image: `/services/service-dev-4.png`,
-          text: "Strawberries",
+          image: `https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+          text: "Commercial Photography",
         },
         {
-          image: `/services/service-mar-1.png`,
-          text: "Deep Diving",
+          image: `https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+          text: "Product Photography",
         },
         {
-          image: `/services/service-inf-1.png`,
-          text: "Train Track",
+          image: `https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+          text: "Landscape Photography",
         },
         {
-          image: `/services/service-inf-2.png`,
-          text: "Santorini",
+          image: `https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+          text: "Street Photography",
         },
         {
-          image: `/services/service-inf-3.png`,
-          text: "Blurry Lights",
+          image: `https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+          text: "Fashion Photography",
         },
         {
-          image: `/services/service-des-1.png`,
-          text: "New York",
+          image: `https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+          text: "Food Photography",
         },
         {
-          image: `/services/service-bus-1.png`,
-          text: "Good Boy",
+          image: `https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+          text: "Architecture Photography",
         },
         {
-          image: `/services/service-bus-2.png`,
-          text: "Coastline",
+          image: `https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+          text: "Documentary Photography",
         },
         {
-          image: `/services/service-bus-3.png`,
-          text: "Palm Trees",
+          image: `https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80`,
+          text: "Videography Services",
         },
         
       ];

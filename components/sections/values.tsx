@@ -39,7 +39,7 @@ const OurValues = () => {
       icon: Users,
       title: "Collaboration",
       description:
-        "We work closely with our clients as partners, ensuring transparent communication and shared success.",
+        "We work closely with our clients to understand their vision, ensuring every shot captures the essence of their story and brand.",
       color: "from-purple-500 to-purple-600",
       accent: "bg-purple-500",
       glow: "shadow-purple-500/30",
@@ -50,7 +50,7 @@ const OurValues = () => {
       icon: Target,
       title: "Excellence",
       description:
-        "We strive for perfection in every detail, delivering solutions that exceed expectations.",
+        "We strive for perfection in every frame, delivering images and videos that exceed expectations and create lasting impressions.",
       color: "from-purple-500 to-purple-600",
       accent: "bg-purple-500",
       glow: "shadow-purple-500/30",
@@ -59,9 +59,9 @@ const OurValues = () => {
     },
     {
       icon: Lightbulb,
-      title: "Innovation",
+      title: "Creativity",
       description:
-        "We embrace cutting-edge technologies and creative approaches to solve complex challenges.",
+        "We embrace artistic vision and innovative techniques to transform ordinary moments into extraordinary visual stories.",
       color: "from-purple-500 to-purple-600",
       accent: "bg-purple-500",
       glow: "shadow-purple-500/30",
@@ -70,9 +70,9 @@ const OurValues = () => {
     },
     {
       icon: Award,
-      title: "Integrity",
+      title: "Passion",
       description:
-        "We maintain the highest ethical standards and build trust through honest, reliable service.",
+        "We maintain the highest standards of artistic integrity and build trust through our genuine passion for visual storytelling.",
       color: "from-purple-500 to-purple-600",
       accent: "bg-purple-500",
       glow: "shadow-purple-500/30",
@@ -149,15 +149,15 @@ const OurValues = () => {
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight text-start">
-            The Values That Power Our Mission
+            The Values That Drive Our Artistry
             <br />
-            and Inspire Every Partnership
+            and Inspire Every Capture
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed text-left max-w-[50rem]">
-            Our work is rooted in principles that go beyond just business.
-            Whether we're collaborating with clients, innovating solutions, or
-            delivering results, our values ensure every step is driven by
-            purpose, integrity, and excellence.
+            Our photography is rooted in principles that go beyond just taking pictures.
+            Whether we're collaborating with clients, creating visual stories, or
+            capturing precious moments, our values ensure every shot is driven by
+            passion, creativity, and artistic excellence.
           </p>
         </div>
 

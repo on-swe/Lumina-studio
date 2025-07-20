@@ -9,33 +9,33 @@ const HowWeWork = () => {
   const steps = [
     {
       number: "01",
-      title: "Define",
+      title: "Consultation",
       description:
-        "We begin by understanding your business goals, target audience, and market position. Through discovery sessions and research, we outline a clear strategy that aligns design, development, and marketing with your vision.",
+        "We begin by understanding your vision, style preferences, and the story you want to tell. Through detailed consultation sessions, we plan every aspect of your photography experience to ensure perfect results.",
       rotation: "rotate-2",
       pinPosition: { top: "1rem", left: "3rem" },
     },
     {
       number: "02",
-      title: "Design",
+      title: "Planning",
       description:
-        "Our creative and UX teams translate strategy into visuals — from sleek user interfaces and responsive layouts to branding assets like logos and style guides that reflect your identity across platforms.",
+        "Our creative team develops a comprehensive plan — from location scouting and styling recommendations to lighting setup and shot lists that will capture your vision beautifully and efficiently.",
       rotation: "-rotate-3",
       pinPosition: { top: "1.5rem", right: "2rem" },
     },
     {
       number: "03",
-      title: "Build",
+      title: "Capture",
       description:
-        "We engineer robust, scalable solutions using modern technologies — whether it's a website, web app, or integrated platform — all optimized for performance, usability, and growth.",
+        "We bring your vision to life through professional photography and videography — using advanced equipment and techniques to create stunning images that capture authentic moments and emotions.",
       rotation: "rotate-1",
       pinPosition: { top: "1rem", left: "2.5rem" },
     },
     {
       number: "04",
-      title: "Launch",
+      title: "Delivery",
       description:
-        "We launch your product or campaign with impact — through targeted digital marketing, SEO, social media strategy, and analytics — ensuring your brand reaches the right audience and drives results.",
+        "We carefully edit and enhance your images, delivering a curated collection of high-quality photographs and videos that tell your story and exceed your expectations.",
       rotation: "-rotate-2",
       pinPosition: { top: "1rem", right: "3rem" },
     },
@@ -66,19 +66,19 @@ const HowWeWork = () => {
         <div className="text-center mb-[8rem]">
           <div className="flex mb-6">
             <span className="text-[#7e22ce] font-medium mb-2 bg-[#7e22ce]/10 px-4 py-1 rounded-full animate-pulse border-[1px] border-[solid] border-[#7e22ce] px-8 py-2">
-              How We Work
+              Our Process
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight text-start">
-            Let us show you how we drive
+            Let us show you how we capture
             <br />
-            <span className={`${allura.className} text-[#7e22ce]`}>your Business</span> to <span className={`${allura.className} text-[#7e22ce]`}> new heights</span>
+            <span className={`${allura.className} text-[#7e22ce]`}>your Story</span> with <span className={`${allura.className} text-[#7e22ce]`}> artistic vision</span>
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed text-left max-w-[50rem]">
-            We combine strategic thinking with creative execution to guide your
-            brand through every stage of development. From initial discovery to
-            final delivery, we ensure each step adds measurable value and
-            lasting impact.
+            We combine creative vision with technical expertise to guide you
+            through every stage of your photography journey. From initial consultation to
+            final delivery, we ensure each step creates lasting memories and
+            beautiful visual stories.
           </p>
         </div>
         {/* Roadmap Board */}

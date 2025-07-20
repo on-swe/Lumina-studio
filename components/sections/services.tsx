@@ -76,15 +76,15 @@ const OurServices = () => {
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight text-start">
-            Innovative Software Solutions
+            Professional Photography
             <br />
-            and Impactful Marketing Strategies
+            and Creative Videography Services
           </h1>
           <p className="text-lg text-[#ffffffc2] leading-relaxed text-left max-w-[50rem]">
-            We craft innovative digital products and strategic marketing
-            solutions that drive measurable growth. From custom software
-            development to impactful branding and data-driven campaigns, we
-            empower businesses to scale with clarity, creativity, and purpose.
+            We offer comprehensive photography and videography services that capture 
+            your most precious moments. From intimate portraits to grand events, 
+            we transform ordinary scenes into extraordinary visual stories with 
+            artistic vision and technical excellence.
           </p>
         </div>
 

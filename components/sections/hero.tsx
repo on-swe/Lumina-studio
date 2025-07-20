@@ -1,7 +1,15 @@
 import { ArrowRight, Play } from "lucide-react";
 import Image from "next/image";
-import BlurText from "@/components/imported-components/blur-text";
+import { BlurText } from "@/components/imported-components/blur-text";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { Allura } from "next/font/google";
+
+const allura = Allura({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-allura",
+});
 
 const Hero = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -30,35 +38,49 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-16 relative z-10">
         <div className="w-full md:w-3/4 lg:w-2/3 mx-auto flex flex-col items-center text-center">
           <span className="text-[#7e22ce] font-medium mb-2 bg-[#7e22ce]/10 px-4 py-1 rounded-full animate-pulse border-[1px] border-[solid] border-[#7e22ce] px-8 py-2">
-            Welcome to Raqeem - رَقيم
+            Welcome to Lumina Studio
           </span>
-          <BlurText
-            text="Transforming Ideas into Digital Excellence"
-            delay={150}
-            animateBy="words"
-            direction="top"
-            onAnimationComplete={() => console.log("animated")}
-            className="w-full max-w-full mx-auto mb-8 text-center px-4 text-[clamp(0.9rem,5vw,1.5rem)] font-bold break-words whitespace-normal"
-          />
+          <h1 className="text-[85px] max-[768px]:text-[4.75rem] font-bold text-gray-900 mb-6 leading-none text-center max-[405px]:text-[2.75rem]">
+            <BlurText
+              text="Capturing Moments"
+              delay={100}
+              className="block mb-2"
+            />
+            <span
+              className={`${allura.className} flex items-center justify-center font-serif text-[#7e22ce] italic`}
+            >
+              <BlurText text="Creating Memories" delay={150} className="mr-4" />
+              <motion.img
+                src="/hero-sm.jpg"
+                alt="Lumina Studio"
+                width={256}
+                height={64}
+                className="object-cover h-[64px] rounded-[32px]"
+                initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
+                animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+                transition={{ duration: 0.8, delay: 1.2 }}
+              />
+            </span>
+          </h1>
 
           <p className="text-lg text-gray-700 mb-10 leading-relaxed max-w-2xl animate-fade-in-up animation-delay-200">
-            We craft innovative software solutions and implement strategic
-            digital marketing campaigns that drive growth and deliver measurable
-            results for your business.
+            We specialize in professional photography and videography services, 
+            transforming ordinary moments into extraordinary visual stories that 
+            capture the essence of your brand and special occasions.
           </p>
           <div className="flex flex-col gap-4 xs:flex-col sm:flex-row sm:items-center sm:justify-center gap-6 animate-fade-in-up animation-delay-400 w-full">
             <button
               onClick={() => scrollToSection("contact")}
               className="bg-[#7e22ce] text-white px-8 py-3 rounded-full font-medium hover:bg-purple-800 hover:scale-105 transition-all duration-300 whitespace-nowrap flex items-center shadow-lg shadow-[#7e22ce]/20 hover:shadow-[#7e22ce]/30"
             >
-              Get Started Now
+              Book Your Session
               <ArrowRight className="ml-2 w-4 h-4" />
             </button>
             <button className="bg-white border-2 border-[#7e22ce] text-gray-700 hover:text-[#7e22ce] px-8 py-3 rounded-full flex items-center font-medium transition-all duration-300 whitespace-nowrap hover:scale-105 hover:border-purple-800 group h-[50px]">
               <div className="w-8 h-8 flex items-center justify-center bg-[#7e22ce]/10 rounded-full mr-2 group-hover:bg-[#7e22ce]/20">
                 <Play className="w-4 h-4 text-[#7e22ce]" />
               </div>
-              Watch Demo
+              View Showreel
             </button>
           </div>
         </div>

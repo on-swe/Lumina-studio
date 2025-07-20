@@ -16,8 +16,8 @@ const Contact: React.FC = () => {
     firstName: "",
     lastName: "",
     email: "",
-    projectType: "",
-    projectDetails: "",
+    sessionType: "",
+    sessionDetails: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -53,8 +53,8 @@ const Contact: React.FC = () => {
           firstName: "", 
           lastName: "", 
           email: "", 
-          projectType: "", 
-          projectDetails: "" 
+          sessionType: "", 
+          sessionDetails: "" 
         });
       } else {
         setSubmitStatus('error');
@@ -79,17 +79,17 @@ const Contact: React.FC = () => {
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight text-start">
-            Let's Create Something
+            Let's Capture Something
             <br />
             <span className={`${allura.className} text-[#7e22ce]`}>
               {" "}
-              Amazing{" "}
+              Beautiful{" "}
             </span>
             Together
           </h1>
           <p className="text-lg text-[#ffffffc2] leading-relaxed text-left max-w-[50rem]">
-            Ready to transform your business? We're here to turn your vision
-            into reality with innovative solutions and strategic expertise.
+            Ready to create stunning visual memories? We're here to turn your vision
+            into reality with professional photography and creative storytelling.
           </p>
         </div>
 
@@ -101,8 +101,8 @@ const Contact: React.FC = () => {
               {/* Simulated aerial view background */}
               <div className="absolute inset-0 bg-gradient-to-br from-gray-500 via-gray-600 to-gray-800">
                 <Image
-                  src="/contact/up-bg-1.jpg"
-                  alt={`Raqeem - رَقيم`}
+                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt={`Lumina Studio`}
                   width={100}
                   height={100}
                   className="absolute inset-0 w-full h-full object-cover rounded-2xl"
@@ -236,9 +236,9 @@ const Contact: React.FC = () => {
           {/* Right side - contact form */}
           <div className="bg-white py-8 px-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 h-fit">
             <div className="mb-8 text-start">
-              <h3 className="text-4xl font-bold mb-2">Start Your Project</h3>
+              <h3 className="text-4xl font-bold mb-2">Book Your Session</h3>
               <p className="text-gray-600">
-                Tell us about your vision and we'll make it happen
+                Tell us about your vision and we'll capture it beautifully
               </p>
             </div>
 
@@ -291,36 +291,36 @@ const Contact: React.FC = () => {
 
               <div className="group">
                 <label className="block text-sm font-medium text-gray-700 mb-2 group-focus-within:text-[#7e22ce] transition-colors">
-                  Project Type
+                  Session Type
                 </label>
                 <select 
-                  name="projectType"
-                  value={formData.projectType}
+                  name="sessionType"
+                  value={formData.sessionType}
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#7e22ce] focus:ring-4 focus:ring-[#7e22ce]/10 transition-all duration-300"
                 >
-                  <option value="">Select a service</option>
-                  <option value="Custom Software Development">Custom Software Development</option>
-                  <option value="Digital Marketing">Digital Marketing</option>
-                  <option value="Cloud Solutions">Cloud Solutions</option>
-                  <option value="Mobile App Development">Mobile App Development</option>
+                  <option value="">Select a session type</option>
+                  <option value="Engagement">Engagement</option>
+                  <option value="Family">Family</option>
+                  <option value="Portrait">Portrait</option>
+                  <option value="Event">Event</option>
                   <option value="Other">Other</option>
                 </select>
               </div>
 
               <div className="group">
                 <label className="block text-sm font-medium text-gray-700 mb-2 group-focus-within:text-[#7e22ce] transition-colors">
-                  Project Details
+                  Session Details
                 </label>
                 <textarea
-                  name="projectDetails"
-                  value={formData.projectDetails}
+                  name="sessionDetails"
+                  value={formData.sessionDetails}
                   onChange={handleChange}
                   required
                   rows={5}
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-[#7e22ce] focus:ring-4 focus:ring-[#7e22ce]/10 transition-all duration-300 resize-none"
-                  placeholder="Tell us about your project goals, timeline, and any specific requirements..."
+                  placeholder="Tell us about your session goals, timeline, and any specific requirements..."
                 ></textarea>
               </div>
 

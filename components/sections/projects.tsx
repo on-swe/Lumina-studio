@@ -2,13 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Heart, Pause, Play } from "lucide-react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
-interface ArtworkData {
+interface PhotographyData {
   id: number;
   title: string;
-  number: string;
-  artist: string;
+  category: string;
+  photographer: string;
   image: string;
-  currentBid: string;
+  status: string;
   description: string;
   timeLeft: {
     days: number;
@@ -24,7 +24,7 @@ interface TiltedCardProps {
   style?: React.CSSProperties;
 }
 
-// TiltedCard component for the artwork cards with subtle movement and glitch prevention
+// TiltedCard component for the photography cards with subtle movement and glitch prevention
 const TiltedCard: React.FC<TiltedCardProps> = ({
   children,
   className = "",
@@ -126,61 +126,61 @@ const Projects: React.FC = () => {
   });
   const autoPlayRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Sample artwork data
-  const artworks: ArtworkData[] = [
+  // Sample photography data
+  const photographs: PhotographyData[] = [
     {
       id: 1,
-      title: "tangling stone",
-      number: "No.19",
-      artist: "Hao Wei",
-      image: "/api/placeholder/400/500",
-      currentBid: "developed",
+      title: "Urban Elegance",
+      category: "Portrait",
+      photographer: "Sarah Chen",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      status: "Featured",
       description:
-        "In Tangling Stone is a success that Feng Jiahao by making sculptures as works on the square facing a brave breakthrough.",
+        "A stunning portrait series capturing the essence of modern urban life through elegant composition and natural lighting.",
       timeLeft: { days: 3, hours: 16, minutes: 47, seconds: 49 },
     },
     {
       id: 2,
-      title: "abstract forms",
-      number: "No.20",
-      artist: "Li Ming",
-      image: "/api/placeholder/400/500",
-      currentBid: "developed",
+      title: "Wedding Dreams",
+      category: "Wedding",
+      photographer: "Michael Rodriguez",
+      image: "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      status: "Featured",
       description:
-        "A contemporary piece exploring the relationship between form and space in modern art.",
+        "Capturing the magic of love and commitment through intimate moments and breathtaking ceremony photography.",
       timeLeft: { days: 2, hours: 12, minutes: 30, seconds: 15 },
     },
     {
       id: 3,
-      title: "urban landscape",
-      number: "No.21",
-      artist: "Zhang Yi",
-      image: "/api/placeholder/400/500",
-      currentBid: "developed",
+      title: "Commercial Vision",
+      category: "Commercial",
+      photographer: "Emma Thompson",
+      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      status: "Featured",
       description:
-        "An evocative representation of city life through mixed media and geometric patterns.",
+        "Professional product photography that elevates brand storytelling through creative composition and lighting mastery.",
       timeLeft: { days: 4, hours: 8, minutes: 22, seconds: 41 },
     },
     {
       id: 4,
-      title: "midnight symphony",
-      number: "No.22",
-      artist: "Chen Lu",
-      image: "/api/placeholder/400/500",
-      currentBid: "developed",
+      title: "Event Highlights",
+      category: "Event",
+      photographer: "David Kim",
+      image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+      status: "Featured",
       description:
-        "A captivating exploration of darkness and light through bold strokes and ethereal compositions.",
+        "Dynamic event coverage that captures the energy and excitement of special occasions and corporate gatherings.",
       timeLeft: { days: 1, hours: 18, minutes: 45, seconds: 33 },
     },
     {
       id: 5,
-      title: "digital dreams",
-      number: "No.23",
-      artist: "Wang Mei",
-      image: "/api/placeholder/400/500",
-      currentBid: "developed",
+      title: "Aerial Perspectives",
+      category: "Drone",
+      photographer: "Lisa Wang",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      status: "Featured",
       description:
-        "Where technology meets traditional artistry in a stunning visual narrative of our digital age.",
+        "Breathtaking aerial photography that offers unique perspectives on landscapes, architecture, and special events.",
       timeLeft: { days: 5, hours: 14, minutes: 28, seconds: 17 },
     },
   ];
@@ -239,12 +239,12 @@ const Projects: React.FC = () => {
   };
 
   const nextSlide = () => {
-    const newIndex = (currentSlide + 1) % artworks.length;
+    const newIndex = (currentSlide + 1) % photographs.length;
     changeSlide(newIndex);
   };
 
   const prevSlide = () => {
-    const newIndex = (currentSlide - 1 + artworks.length) % artworks.length;
+    const newIndex = (currentSlide - 1 + photographs.length) % photographs.length;
     changeSlide(newIndex);
   };
 
@@ -252,8 +252,8 @@ const Projects: React.FC = () => {
     setIsAutoPlay(!isAutoPlay);
   };
 
-  // Helper function to get artwork gradient
-  const getArtworkGradient = (index: number) => {
+  // Helper function to get photography gradient
+  const getPhotographyGradient = (index: number) => {
     const gradients = [
       "#f3f4f6 0%, #fbbf24 50%, #ef4444 100%",
       "#e5e7eb 0%, #8b5cf6 50%, #06b6d4 100%",
@@ -264,7 +264,7 @@ const Projects: React.FC = () => {
     return gradients[index % gradients.length];
   };
 
-  const currentArtwork = artworks[currentSlide];
+  const currentPhotograph = photographs[currentSlide];
 
   return (
     <section
@@ -560,19 +560,19 @@ const Projects: React.FC = () => {
         <div className="text-center max-w-7xl mx-auto max-[1300px]:px-4 max-[500px]:px-0">
           <div className="flex mb-6">
             <span className="text-[#7e22ce] font-medium mb-2 bg-[#7e22ce]/10 px-4 py-1 rounded-full animate-pulse border border-solid border-[#7e22ce] px-8 py-2">
-              Our Projects
+              Our Photographies
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight text-start">
-            Real Results from Visionary Ideas
+            Capturing Moments with Artistic Vision
             <br />
             Crafted with Passion and Precision{" "}
           </h1>
           <p className="text-lg text-[#ffffffc2] leading-relaxed text-left max-w-[50rem]">
-            Every project we undertake is a reflection of our commitment to
-            innovation, quality, and meaningful impact. From startups to
-            industry leaders, our solutions are tailored to solve real problems
-            and drive tangible results across sectors.
+            Every photograph we create is a reflection of our commitment to
+            artistic excellence, technical mastery, and storytelling. From portraits to
+            events, our images are tailored to capture authentic moments
+            and create lasting memories across all occasions.
           </p>
         </div>
       </div>
@@ -618,7 +618,7 @@ const Projects: React.FC = () => {
             <ChevronLeft className="w-8 h-8 text-[#7e22ce]" />
           </div>
           <span className="text-xs text-[#7e22ce] font-medium text-center px-2 leading-tight text-nowrap">
-            PREVIOUS ARTWORK
+            PREVIOUS PHOTO
           </span>
         </button>
 
@@ -632,37 +632,26 @@ const Projects: React.FC = () => {
                   className={`w-full h-full transition-all duration-800 shimmer-effect ${
                     isAnimating ? "scale-enter" : ""
                   }`}
-                  style={{
-                    background: `linear-gradient(135deg, 
-                      ${getArtworkGradient(currentSlide)}
-                    )`,
-                  }}
                 >
-                  <div className="w-full h-full flex items-center justify-center relative z-10">
-                    <div className="text-center">
-                      <div
-                        className={`w-24 sm:w-28 md:w-32 h-24 sm:h-28 md:h-32 bg-white bg-opacity-20 rounded-full mx-auto mb-4 backdrop-blur-sm float-animation ${
-                          isAnimating ? "bounce-in" : ""
-                        }`}
-                        style={{ animationDelay: "0.3s" }}
-                      >
-                        <div className="w-full h-full flex items-center justify-center">
-                          <div className="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 bg-white bg-opacity-30 rounded-full"></div>
-                        </div>
-                      </div>
-                      <div className="text-white font-medium text-base sm:text-lg">
-                        {currentArtwork.title}
-                      </div>
-                      <div className="text-white text-opacity-80 text-sm">
-                        {currentArtwork.number}
-                      </div>
+                  <img
+                    src={currentPhotograph.image}
+                    alt={currentPhotograph.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                    <div className="text-white font-medium text-base sm:text-lg">
+                      {currentPhotograph.title}
+                    </div>
+                    <div className="text-white text-opacity-80 text-sm">
+                      {currentPhotograph.category}
                     </div>
                   </div>
                 </div>
 
                 {/* Price Badge */}
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 bg-black bg-opacity-80 backdrop-blur-sm text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold slide-up">
-                  {currentArtwork.currentBid.toLocaleString()}
+                  {currentPhotograph.status}
                 </div>
               </TiltedCard>
             </div>
@@ -680,7 +669,7 @@ const Projects: React.FC = () => {
                     className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-800 leading-tight gradient-text slide-up"
                     style={{ animationDelay: "0.2s" }}
                   >
-                    {currentArtwork.title}
+                    {currentPhotograph.title}
                   </h2>
                 </div>
 
@@ -688,7 +677,7 @@ const Projects: React.FC = () => {
                   className="text-white leading-relaxed text-sm sm:text-base slide-up mt-2 px-4 sm:px-0"
                   style={{ animationDelay: "0.4s" }}
                 >
-                  {currentArtwork.description}
+                  {currentPhotograph.description}
                 </p>
               </div>
             </div>
@@ -702,7 +691,7 @@ const Projects: React.FC = () => {
           className="hidden lg:flex items-center justify-center w-24 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed px-6 h-fit min-w-[10rem]"
         >
           <span className="text-xs text-[#7e22ce] font-medium text-center px-2 leading-tight mb-2 text-nowrap">
-            NEXT ARTWORK
+            NEXT PHOTO
           </span>
           <div className="transform group-hover:scale-110 transition-transform duration-300">
             <ChevronRight className="w-8 h-8 text-[#7e22ce]" />
@@ -713,7 +702,7 @@ const Projects: React.FC = () => {
       {/* Slide Indicators */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 py-4 sm:py-6 px-4">
         <div className="flex gap-2 sm:gap-3">
-          {artworks.map((artwork, index) => (
+          {photographs.map((photograph, index) => (
             <button
               key={index}
               onClick={() => changeSlide(index)}
@@ -723,14 +712,14 @@ const Projects: React.FC = () => {
                   ? "w-8 sm:w-10 lg:w-12 h-2.5 sm:h-3 bg-[#7e22ce] rounded-full shadow-lg"
                   : "w-2.5 sm:w-3 h-2.5 sm:h-3 bg-gray-300 rounded-full hover:bg-[#7e22ce] hover:scale-125 card-hover"
               }`}
-              title={`${artwork.title} - ${artwork.number}`}
+              title={`${photograph.title} - ${photograph.category}`}
             ></button>
           ))}
         </div>
 
         <div className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-500">
           <span className="font-medium">
-            {currentSlide + 1} / {artworks.length}
+            {currentSlide + 1} / {photographs.length}
           </span>
           <div className="w-px h-3 sm:h-4 bg-gray-300"></div>
           <button

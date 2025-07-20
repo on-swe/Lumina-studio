@@ -7,22 +7,22 @@ export default function SuccessSection() {
 
   const features = [
     {
-      title: "Strategic Technology Planning",
+      title: "Creative Vision & Planning",
       description:
-        "Tailored roadmaps that align your technology investments with core business goals and long-term growth.",
-      highlights: ["Data-driven", "Custom roadmaps", "Future-ready"],
+        "Tailored photography sessions that align with your unique style and vision, ensuring every shot captures your story perfectly.",
+      highlights: ["Personalized", "Creative direction", "Style-focused"],
     },
     {
-      title: "Performance-Driven Marketing",
+      title: "Professional Quality",
       description:
-        "Results-focused campaigns that maximize return on investment and deliver measurable impact across digital platforms.",
-      highlights: ["Maximize ROI", "Cross-channel", "Measurable impact"],
+        "High-end equipment and expert techniques that deliver stunning, gallery-worthy images with exceptional attention to detail.",
+      highlights: ["Premium quality", "Expert techniques", "Gallery-worthy"],
     },
     {
-      title: "Continuous Optimization",
+      title: "Comprehensive Service",
       description:
-        "Ongoing analysis and refinement to ensure your solutions scale and adapt with your evolving business needs.",
-      highlights: ["Iterative", "Always evolving", "Performance-focused"],
+        "Full-service photography from consultation to final delivery, including editing, retouching, and professional presentation.",
+      highlights: ["End-to-end", "Professional editing", "Complete service"],
     },
   ];
 
@@ -83,24 +83,24 @@ export default function SuccessSection() {
             <div className="w-full">
               <div className="flex justify-start xl:justify-start mb-4 sm:mb-6">
                 <span className="text-[#7e22ce] font-medium bg-[#7e22ce]/10 rounded-full animate-pulse border border-[#7e22ce] px-4 sm:px-6 lg:px-8 py-2 text-xs sm:text-sm lg:text-base text-center">
-                  How We Drive Your Success
+                  How We Create Your Success
                 </span>
               </div>
 
               <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight text-start">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-[#7e22ce]">
-                  Next-gen
+                  Professional
                 </span>
                 <br />
-                business acceleration
+                photography excellence
               </h2>
 
               <p className="text-lg text-[#ffffffc2] leading-relaxed text-left max-w-[50rem]">
-                We architect digital ecosystems that blend emerging technologies
-                with growth marketing to future-proof your business. Our
-                comprehensive approach combines cutting-edge software solutions,
-                data-led marketing strategies, and personalized expertise to
-                accelerate business growth and drive digital transformation.
+                We create visual stories that blend artistic vision with technical
+                expertise to capture your most precious moments. Our comprehensive
+                approach combines creative direction, professional equipment, and
+                personalized service to deliver stunning images that tell your
+                unique story and create lasting memories.
               </p>
 
               {/* Special automation card - Only on larger screens */}
@@ -112,17 +112,17 @@ export default function SuccessSection() {
                     </div>
                     <div>
                       <h3 className="text-lg lg:text-xl font-bold text-black mb-2">
-                        Smart Automation
+                        Artistic Excellence
                       </h3>
                       <p className="text-sm text-gray-600 mb-3">
-                        Boost efficiency and cut costs by automating key
-                        workflows using AI-driven solutions.
+                        Transform ordinary moments into extraordinary memories
+                        with our artistic vision and creative expertise.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         {[
-                          "AI-powered",
-                          "Process efficiency",
-                          "Scalable automation",
+                          "Creative vision",
+                          "Artistic direction",
+                          "Memorable moments",
                         ].map((tag, i) => (
                           <span
                             key={i}
@@ -167,17 +167,17 @@ export default function SuccessSection() {
                         </div>
                         <div>
                           <h3 className="text-lg sm:text-xl font-bold text-black mb-2">
-                            Smart Automation
+                            Artistic Excellence
                           </h3>
                           <p className="text-sm text-gray-600 mb-3">
-                            Boost efficiency and cut costs by automating key
-                            workflows using AI-driven solutions.
+                            Transform ordinary moments into extraordinary memories
+                            with our artistic vision and creative expertise.
                           </p>
                           <div className="flex flex-wrap gap-1 sm:gap-2">
                             {[
-                              "AI-powered",
-                              "Process efficiency",
-                              "Scalable automation",
+                              "Creative vision",
+                              "Artistic direction",
+                              "Memorable moments",
                             ].map((tag, i) => (
                               <span
                                 key={i}

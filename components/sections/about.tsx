@@ -11,7 +11,7 @@ const AboutUs = () => {
   return (
     <>
       <Head>
-        <title>Raqeem - About Us</title>
+        <title>Lumina Studio - About Us</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
@@ -52,25 +52,25 @@ const AboutUs = () => {
               <h1
                 className={`text-6xl font-bold text-white mb-8 leading-[0.85]`}
               >
-                Meet <span className={`text-[#7e22ce]`}> Raqeem - رَقيم</span>
+                Meet <span className={`text-[#7e22ce]`}> Lumina Studio</span>
                 <br />
                 <span className={`${allura.className} text-4xl`}>
-                  (Your Strategic Business Partners for Global Growth)
+                  (Your Creative Partners in Visual Storytelling)
                 </span>
               </h1>
 
               <p className="hero-description text-[#ffffffc2] text-start">
-                We&apos;re more than just designers — we&apos;re passionate
-                creators, problem-solvers, and your brand&apos;s greatest ally.
-                With a blend of bold creativity and strategic innovation, we
-                craft captivating visuals and seamless digital experiences that
-                breathe life into your ideas.
+                We&apos;re more than just photographers — we&apos;re passionate
+                storytellers, visual artists, and your brand&apos;s creative ally.
+                With a blend of artistic vision and technical expertise, we
+                capture moments and create compelling visual narratives that
+                bring your stories to life.
               </p>
 
               <p className="hero-sub text-[#ffffffc2]">
-                Our mission is to bridge the gap between imagination and
-                reality, transforming businesses through cutting-edge technology
-                and forward-thinking design.
+                Our mission is to transform ordinary moments into extraordinary
+                visual experiences, creating timeless memories through the art
+                of photography and videography.
               </p>
             </div>
 
@@ -79,8 +79,8 @@ const AboutUs = () => {
               <div className="main-image-container">
                 <div className="main-image">
                   <img
-                    src="/about/img-1.jpg"
-                    alt="Creative team collaboration"
+                    src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                    alt="Creative photography team"
                   />
                   <div className="image-overlay"></div>
                 </div>
@@ -89,13 +89,13 @@ const AboutUs = () => {
               <div className="floating-elements">
                 <div className="floating-star">✦</div>
                 <div className="floating-badge first-floating-badge min-w-[191px]">
-                  Strategic Innovation
+                  Artistic Vision
                 </div>
                 <div className="floating-badge second-floating-badge  min-w-[191px]">
                   Creative Excellence
                 </div>
                 <div className="floating-badge  min-w-[191px]">
-                  Digital Transformation
+                  Visual Storytelling
                 </div>
               </div>
             </div>
@@ -190,17 +190,17 @@ const AboutUs = () => {
                 <div className="stats-content">
                   <div className="main-stat">
                     <div className="stat-number">
-                      <div className="text-8xl font-bold mb-4">40%</div>
+                      <div className="text-8xl font-bold mb-4">500+</div>
                     </div>
                     <div className="stat-description">
-                      Increased growth revenues
+                      Happy clients and projects completed
                     </div>
                   </div>
 
                   <div className="features-list">
                     <div className="feature-item">
                       <div className="feature-icon"></div>
-                      <span className="feature-text">Strategic Innovation</span>
+                      <span className="feature-text">Artistic Vision</span>
                     </div>
                     <div className="feature-item">
                       <div className="feature-icon"></div>
@@ -209,7 +209,7 @@ const AboutUs = () => {
                     <div className="feature-item">
                       <div className="feature-icon"></div>
                       <span className="feature-text">
-                        Digital Transformation
+                        Visual Storytelling
                       </span>
                     </div>
                   </div>
@@ -219,12 +219,12 @@ const AboutUs = () => {
                 <div className="services-section">
                   <h3 className="services-title">Our Expertise</h3>
                   <div className="services-grid">
-                    <div className="service-card">Digital Marketing</div>
-                    <div className="service-card">Web Design</div>
-                    <div className="service-card">Development</div>
-                    <div className="service-card">Mobile Apps</div>
-                    <div className="service-card">ERP Solutions</div>
-                    <div className="service-card">SEO Optimization</div>
+                    <div className="service-card">Portrait Photography</div>
+                    <div className="service-card">Event Coverage</div>
+                    <div className="service-card">Commercial Shoots</div>
+                    <div className="service-card">Wedding Videography</div>
+                    <div className="service-card">Product Photography</div>
+                    <div className="service-card">Drone Photography</div>
                   </div>
                 </div>
               </div>
@@ -233,7 +233,7 @@ const AboutUs = () => {
               <div className="floating-masterpiece">
                 <div className="masterpiece-frame">
                   <div className="masterpiece-image">
-                    <img src="/about/img-2.jpg" alt="Creative workspace" />
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Creative photography workspace" />
                   </div>
                 </div>
               </div>

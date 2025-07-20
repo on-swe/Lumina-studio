@@ -63,7 +63,7 @@ const RevealText = () => {
             {/* Line 1 */}
             <div className="flex items-center flex-wrap mb-8 text-[5rem] tracking-[-7px] font-bold leading-tight max-[1100px]:justify-center max-[1100px]:text-center max-[630px]:text-[3rem] max-[630px]:tracking-[-2px] max-[630px]:mb-0 ">
               <span className={`mr-6 ${getTextClasses(0, true)}`}>We</span>
-              <span className={`mr-6 ${getTextClasses(1)}`}>engineer</span>
+              <span className={`mr-6 ${getTextClasses(1)}`}>capture</span>
               <div
                 className={getImageContainerClasses(
                   2,
@@ -80,12 +80,12 @@ const RevealText = () => {
                   )}
                 </div>
               </div>
-              <span className={getTextClasses(3)}>digital products</span>
+              <span className={getTextClasses(3)}>precious moments</span>
             </div>
 
             {/* Line 2 */}
             <div className="flex items-center flex-wrap mb-8 text-[5rem] tracking-[-7px] font-bold leading-tight  max-[1100px]:justify-center max-[1100px]:text-center max-[630px]:text-[3rem] max-[630px]:tracking-[-2px] max-[630px]:mb-0">
-              <span className={`mr-6 ${getTextClasses(4)}`}>that empower</span>
+              <span className={`mr-6 ${getTextClasses(4)}`}>that preserve</span>
               <div
                 className={getImageContainerClasses(
                   5,
@@ -102,19 +102,19 @@ const RevealText = () => {
                   )}
                 </div>
               </div>
-              <span className={`italic ${getTextClasses(6)}`}>growth</span>
+              <span className={`italic ${getTextClasses(6)}`}>memories</span>
             </div>
 
             {/* Line 3 */}
             <div className="flex items-center flex-wrap mb-8 text-[5rem] tracking-[-7px] font-bold leading-tight  max-[1100px]:justify-center max-[1100px]:text-center max-[630px]:text-[3rem] max-[630px]:tracking-[-2px] max-[630px]:mb-0">
               <span className={`mr-6 ${getTextClasses(7)}`}>
-                and connect brands with purpose
+                and tell stories with artistry
               </span>
             </div>
 
             {/* Line 4 */}
             <div className="flex items-center flex-wrap text-[5rem] tracking-[-7px]  font-bold leading-tight  max-[1100px]:justify-center max-[1100px]:text-center max-[630px]:text-[3rem] max-[630px]:tracking-[-2px] max-[630px]:mb-0">
-              <span className={`mr-6 ${getTextClasses(8)}`}>with their</span>
+              <span className={`mr-6 ${getTextClasses(8)}`}>through our</span>
               <div
                 className={getImageContainerClasses(
                   9,
@@ -142,7 +142,7 @@ const RevealText = () => {
                   )}
                 </div>
               </div>
-              <span className={getTextClasses(10)}>future</span>
+              <span className={getTextClasses(10)}>lens</span>
             </div>
           </div>
         </div>
@@ -150,7 +150,7 @@ const RevealText = () => {
       <div className="jsx-7edb48ae9efee03c inline-flex items-center justify-center mt-8">
         <div className="jsx-7edb48ae9efee03c w-16 h-px bg-gradient-to-r from-transparent to-purple-300"></div>
         <span className="jsx-7edb48ae9efee03c mx-4 text-purple-500 text-sm font-medium">
-          Guiding Excellence
+          Artistic Vision
         </span>
         <div className="jsx-7edb48ae9efee03c w-16 h-px bg-gradient-to-l from-transparent to-purple-300"></div>
       </div>

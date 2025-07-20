@@ -45,19 +45,13 @@ const Footer = function() {
           <div className="flex flex-col justify-center">
             <a
               href="#"
-              className="text-2xl font-bold text-[#7e22ce] mr-2 font-pacifico cursor-raqeem"
+              className="text-4xl font-bold text-[#7e22ce] mr-2 font-pacifico cursor-pointer hover:text-purple-400 transition-colors"
             >
-              <Image
-                src={`/logo/no-bg-violet.png`}
-                alt={`Raqeem - رَقيم`}
-                width={320}
-                height={96}
-                className="object-cover h-[96px]"
-              />
+              Lumina
             </a>
             <p className="text-gray-300 mb-4">
-              Delivering innovative software solutions and digital marketing
-              strategies that drive business success.
+              Capturing moments and creating memories through professional photography
+              and creative videography services that tell your unique story.
             </p>
             <div className="flex space-x-4">
               {[Facebook, Instagram, Twitter, Linkedin].map((Icon, index) => (
@@ -71,20 +65,12 @@ const Footer = function() {
               ))}
             </div>
           </div>
-          <div>
-            <Image
-              src={`footer-signature.png`}
-              alt={`Raqeem - رَقيم`}
-              width={256}
-              height={48}
-              className="object-cover w-full h-full"
-            />
-          </div>
+
           <div className="flex flex-col justify-center">
             <h3 className="font-semibold text-[2.75rem]">Stay Updated</h3>
             <p className="text-gray-300 mb-4">
-              Get the latest insights on technology trends and marketing
-              strategies.
+              Get the latest photography tips, behind-the-scenes content, and
+              special offers for your next session.
             </p>
             
             {submitStatus === 'success' && (
@@ -125,7 +111,7 @@ const Footer = function() {
               © 2025{" "}
               <span className="text-[#7e22ce] font-extrabold">
                 {" "}
-                Raqeem - رَقيم
+                Lumina Studio
               </span>
               , All Rights Reserved.
             </p>

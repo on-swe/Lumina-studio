@@ -30,16 +30,9 @@ const Header = function () {
           <div className="flex items-center flex-shrink-0">
             <a
               href="#"
-              className="text-2xl font-bold text-[#7e22ce] mr-2 font-pacifico cursor-pointer"
+              className="text-3xl font-bold text-[#7e22ce] mr-2 font-pacifico cursor-pointer hover:text-purple-700 transition-colors"
             >
-              <Image
-                src={`/logo/no-bg-violet.png`}
-                alt={`Raqeem - رَقيم`}
-                width={256}
-                height={48}
-                className="object-cover h-[48px] w-[256px]"
-                priority
-              />
+              Lumina
             </a>
           </div>
 
@@ -73,25 +66,25 @@ const Header = function () {
               onClick={() => scrollToSection("drive-success")}
               className="text-gray-800 hover:text-[#7e22ce] font-extrabold transition-colors whitespace-nowrap text-sm xl:text-base"
             >
-              Drive Success
+              Portfolio
             </button>
             <button
               onClick={() => scrollToSection("how-work")}
               className="text-gray-800 hover:text-[#7e22ce] font-extrabold transition-colors whitespace-nowrap text-sm xl:text-base"
             >
-              How Work
+              Process
             </button>
             <button
               onClick={() => scrollToSection("projects")}
               className="text-gray-800 hover:text-[#7e22ce] font-extrabold transition-colors whitespace-nowrap text-sm xl:text-base"
             >
-              Projects
+              Gallery
             </button>
             <button
               onClick={() => scrollToSection("blogs")}
               className="text-gray-800 hover:text-[#7e22ce] font-extrabold transition-colors whitespace-nowrap text-sm xl:text-base"
             >
-              Blogs
+              Blog
             </button>
           </nav>
 
@@ -101,7 +94,7 @@ const Header = function () {
               onClick={() => scrollToSection("contact")}
               className="bg-[#7e22ce] text-white px-4 xl:px-8 py-2 xl:py-3 rounded-full font-medium hover:bg-purple-800 transition duration-300 whitespace-nowrap text-sm xl:text-base"
             >
-              Contact Us
+              Book Session
             </button>
           </div>
 
@@ -154,25 +147,25 @@ const Header = function () {
               onClick={() => scrollToSection("drive-success")}
               className="block w-full text-left text-gray-800 hover:text-[#7e22ce] font-medium transition-colors py-3 px-2 rounded-md hover:bg-gray-50"
             >
-              Drive Success
+              Portfolio
             </button>
             <button
               onClick={() => scrollToSection("how-work")}
               className="block w-full text-left text-gray-800 hover:text-[#7e22ce] font-medium transition-colors py-3 px-2 rounded-md hover:bg-gray-50"
             >
-              How Work
+              Process
             </button>
             <button
               onClick={() => scrollToSection("projects")}
               className="block w-full text-left text-gray-800 hover:text-[#7e22ce] font-medium transition-colors py-3 px-2 rounded-md hover:bg-gray-50"
             >
-              Projects
+              Gallery
             </button>
             <button
               onClick={() => scrollToSection("blogs")}
               className="block w-full text-left text-gray-800 hover:text-[#7e22ce] font-medium transition-colors py-3 px-2 rounded-md hover:bg-gray-50"
             >
-              Blogs
+              Blog
             </button>
 
             <div className="pt-2">
@@ -180,7 +173,7 @@ const Header = function () {
                 onClick={() => scrollToSection("contact")}
                 className="w-full bg-[#7e22ce] text-white px-6 py-3 rounded-full font-medium hover:bg-purple-800 transition duration-300"
               >
-                Contact Us
+                Book Session
               </button>
             </div>
           </nav>

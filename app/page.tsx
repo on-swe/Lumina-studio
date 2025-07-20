@@ -14,7 +14,8 @@ import SuccessSection from "@/components/sections/drive-success";
 import Header from "@/components/sections/header";
 import Footer from "@/components/sections/footer";
 import CTA from "@/components/sections/cta";
-export default function RaqeemPortfolio() {
+
+export default function LuminaStudioPortfolio() {
   const [isVisible, setIsVisible] = useState({});
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);

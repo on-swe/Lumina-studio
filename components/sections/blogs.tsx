@@ -8,162 +8,78 @@ const allura = Allura({
   variable: "--font-allura",
 });
 const BlogsSection = () => {
-  // const blogPosts = [
-  //   {
-  //     id: 7,
-  //     title: "How to Build Scalable Software",
-  //     category: "Software Development",
-  //     date: "April 2, 2024",
-  //     author: "By TechCrunch",
-  //     image: "/blogs/scalable-software.jpg",
-  //     link: "https://techcrunch.com/2021/09/15/how-to-build-scalable-software/",
-  //     featured: false,
-  //     excerpt:
-  //       "Key patterns and practices for building software that grows with your business.",
-  //   },
-  //   {
-  //     id: 8,
-  //     title: "The Lean Startup Methodology",
-  //     category: "Business Strategy",
-  //     date: "January 25, 2024",
-  //     author: "By Eric Ries",
-  //     image: "/blogs/lean-startup.jpg",
-  //     link: "https://theleanstartup.com/principles",
-  //     featured: true,
-  //     excerpt:
-  //       "How to build a successful startup by validating ideas quickly and efficiently.",
-  //   },
-  //   {
-  //     id: 10,
-  //     title: "Growth Hacking: What It Is and How to Do It",
-  //     category: "Digital Marketing",
-  //     date: "March 30, 2024",
-  //     author: "By Neil Patel",
-  //     image: "/blogs/growth-hacking.jpg",
-  //     link: "https://neilpatel.com/blog/growth-hacking/",
-  //     featured: false,
-  //     excerpt: "Proven growth hacking techniques used by successful startups.",
-  //   },
-  //   {
-  //     id: 12,
-  //     title: "Clean Code: Best Practices for Developers",
-  //     category: "Software Development",
-  //     date: "February 5, 2024",
-  //     author: "By Robert C. Martin",
-  //     image: "/blogs/clean-code.jpg",
-  //     link: "https://cleancoders.com/article/clean-code-best-practices",
-  //     featured: false,
-  //     excerpt: "Essential principles for writing maintainable, efficient code.",
-  //   },
-  //   {
-  //     id: 15,
-  //     title: "The Psychology of Pricing",
-  //     category: "Marketing Strategy",
-  //     date: "April 5, 2024",
-  //     author: "By Wharton School",
-  //     image: "/blogs/pricing.jpg",
-  //     link: "https://knowledge.wharton.upenn.edu/article/the-psychology-of-pricing/",
-  //     featured: false,
-  //     excerpt:
-  //       "How pricing strategies influence consumer perception and behavior.",
-  //   },
-  //   {
-  //     id: 18,
-  //     title: "Cybersecurity Fundamentals for Businesses",
-  //     category: "Cybersecurity",
-  //     date: "April 15, 2024",
-  //     author: "By Krebs on Security",
-  //     image: "/blogs/cyber-business.jpg",
-  //     link: "https://krebsonsecurity.com/2024/04/cybersecurity-fundamentals-for-businesses/",
-  //     featured: false,
-  //     excerpt:
-  //       "Essential cybersecurity practices every business should implement.",
-  //   },
-  //   {
-  //     id: 19,
-  //     title: "The Future of E-Commerce",
-  //     category: "Digital Marketing",
-  //     date: "January 30, 2024",
-  //     author: "By Shopify",
-  //     image: "/blogs/ecommerce-future.jpg",
-  //     link: "https://www.shopify.com/enterprise/future-of-ecommerce",
-  //     featured: true,
-  //     excerpt:
-  //       "Emerging trends and technologies shaping the future of online retail.",
-  //   },
-  // ];
   const blogPosts = [
     {
       id: 1,
-      title: "Building Scalable Software: Principles and Best Practices",
-      category: "Software Development",
+      title: "Mastering Natural Light Photography: A Complete Guide",
+      category: "Photography Tips",
       date: "May 4, 2025",
-      author: "By Mark Williams (LinkedIn)",
-      image: "/blogs/scalable-software.jpg",
-      link: "https://www.linkedin.com/pulse/building-scalable-software-principles-best-practices-mark-williams-faosf/",
+      author: "By Sarah Chen (Photography Pro)",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      link: "https://www.photographypro.com/mastering-natural-light-photography/",
       featured: true,
       excerpt:
-        "Explore core principles and best practices to architect software systems that scale seamlessly with demand." 
+        "Learn how to harness the power of natural light to create stunning, professional-quality photographs in any setting." 
     },
     {
       id: 2,
-      title: "6 Software Design Best Practices for Scalable, Flexible Solutions",
-      category: "Software Development",
+      title: "10 Essential Camera Settings Every Photographer Should Know",
+      category: "Technical Skills",
       date: "December 3, 2024",
-      author: "By Rebecca Dodd (Retool)",
-      image: "/blogs/software-design-best-practices.jpg",
-      link: "https://retool.com/blog/software-design-best-practices/",
+      author: "By Michael Rodriguez (Camera World)",
+      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1138&q=80",
+      link: "https://cameraworld.com/essential-camera-settings/",
       featured: false,
       excerpt:
-        "Discover six design principles that make your codebase more maintainable, resilient, and scalable." 
+        "Discover the fundamental camera settings that will take your photography from amateur to professional level." 
     },
     {
       id: 3,
-      title: "10 Powerful Software Scalability Strategies for Unstoppable Growth",
-      category: "Software Development",
+      title: "Wedding Photography: Capturing Love Stories Beautifully",
+      category: "Wedding Photography",
       date: "≈October 2024",
-      author: "By FullScale Team",
-      image: "/blogs/software-scalability-strategies.jpg",
-      link: "https://fullscale.io/blog/software-scalability/",
+      author: "By Emma Thompson (Wedding Pro)",
+      image: "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      link: "https://weddingpro.com/capturing-love-stories/",
       featured: false,
       excerpt:
-        "Practical engineering strategies—from CI/CD to performance monitoring—to ensure your application scales." 
+        "Professional techniques for capturing the magic and emotion of wedding ceremonies and receptions." 
     },
     {
       id: 4,
-      title: "Building a Successful Growth Marketing Framework for SaaS",
-      category: "Growth Marketing",
+      title: "The Art of Portrait Photography: From Beginner to Pro",
+      category: "Portrait Photography",
       date: "May 22, 2025",
-      author: "By Sophie Grigoryan (Userpilot)",
-      image: "/blogs/saas-growth-framework.jpg",
-      link: "https://userpilot.com/blog/growth-marketing-framework/",
+      author: "By David Kim (Portrait Master)",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      link: "https://portraitmaster.com/art-of-portrait-photography/",
       featured: true,
       excerpt:
-        "Step-by-step guide to crafting a data-driven growth funnel using the AAARRR framework for SaaS." 
+        "Step-by-step guide to creating compelling portraits that capture personality and emotion." 
     },
     {
       id: 5,
-      title: "Growth Marketing for Startups: A Comprehensive Guide",
-      category: "Growth Marketing",
+      title: "Commercial Photography: Building Your Business Portfolio",
+      category: "Commercial Photography",
       date: "≈8 months ago",
-      author: "By Kaya Team",
-      image: "/blogs/startup-growth-marketing.jpg",
-      link: "https://www.usekaya.com/blog/growth-marketing-for-startups",
+      author: "By Lisa Wang (Commercial Pro)",
+      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      link: "https://commercialpro.com/building-portfolio/",
       featured: false,
       excerpt:
-        "Learn how iterative, data-led growth tactics optimize acquisition, retention, and revenue for startups." 
+        "Learn how to build a strong commercial photography portfolio that attracts high-paying clients." 
     },
     {
       id: 6,
-      title: "Every Growth Marketing Framework and Formula Ever",
-      category: "Growth Marketing",
+      title: "Drone Photography: Aerial Perspectives and Techniques",
+      category: "Drone Photography",
       date: "≈3 years ago",
-      author: "By Tuff Growth Team",
-      image: "/blogs/growth-frameworks.jpg",
-      link: "https://tuffgrowth.com/every-growth-marketing-framework-and-formula-ever/",
+      author: "By Alex Johnson (Drone Expert)",
+      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      link: "https://droneexpert.com/aerial-photography-techniques/",
       featured: false,
       excerpt:
-        "A curated overview of ten proven growth frameworks that add clarity and direction to your marketing efforts." 
+        "Master the art of aerial photography with professional drone techniques and composition tips." 
     },
   ];
   
@@ -198,20 +114,20 @@ const BlogsSection = () => {
         <div className="text-center mb-[4rem]">
           <div className="flex mb-6">
             <span className="text-[#7e22ce] font-medium mb-2 bg-[#7e22ce]/10 px-4 py-1 rounded-full animate-pulse border-[1px] border-[solid] border-[#7e22ce] px-8 py-2">
-              Blogs, Insights & Trends
+              Photography Tips & Insights
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight text-start">
-            Digital innovation and growth 
+            Creative inspiration and techniques 
             
             <br />for{" "}
             <span className={`${allura.className} text-[#7e22ce] italic`}>
-              business success
+              visual storytelling
             </span>
           </h1>
           <p className="text-lg text-gray-600 leading-relaxed text-left max-w-[50rem]">
-            Expert perspectives on software development, marketing strategies,
-            and creating exceptional digital experiences.
+            Expert perspectives on photography techniques, creative inspiration,
+            and capturing exceptional visual moments.
           </p>
         </div>
 

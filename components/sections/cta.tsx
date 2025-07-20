@@ -27,18 +27,18 @@ const CTA = function () {
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="mb-6 md:mb-0 md:mr-8">
                 <h2 className="text-3xl font-bold mb-4 animate-pulse">
-                  Ready to Transform Your Business?
+                  Ready to Capture Your Story?
                 </h2>
                 <p className="text-white/90">
-                  Join hundreds of companies who have accelerated their growth
-                  with our innovative solutions and strategic expertise.
+                  Join hundreds of clients who have created lasting memories
+                  with our professional photography and creative storytelling.
                 </p>
               </div>
               <button
                 onClick={() => scrollToSection("contact")}
                 className="bg-white text-[#7e22ce] px-8 py-3 rounded-full font-medium hover:bg-gray-100 hover:scale-105 transition-all duration-300 whitespace-nowrap"
               >
-                Get Started Today
+                Book Your Session
               </button>
             </div>
           </div>
