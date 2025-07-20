@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Raqeem - رَقيم ',
+  title: 'Lumina Studio',
   description: 'Created with Raqeem - رَقيم ',
-  generator: 'Elrayes',
+  generator: 'Raqeem - رَقيم ',
   icons:{
-    icon:'/logo/profile.png'
+    icon:'/logo/logo.png'
   }
 }
 

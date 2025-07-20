@@ -30,7 +30,7 @@ const Header = function () {
           <div className="flex items-center flex-shrink-0">
             <a
               href="#"
-              className="text-3xl font-bold text-[#7e22ce] mr-2 font-pacifico cursor-pointer hover:text-purple-700 transition-colors"
+              className="text-4xl font-extrabold text-[#7e22ce] mr-2 cursor-pointer hover:text-purple-700 transition-colors"
             >
               Lumina
             </a>

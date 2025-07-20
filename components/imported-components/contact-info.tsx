@@ -22,13 +22,13 @@ const ContactInfo: React.FC = () => {
     {
       type: "phone",
       label: "Mobile 1",
-      value: "+20 100 761 0573",
+      value: "+332 476 761 9494",
       icon: Phone,
     },
     {
       type: "phone",
       label: "Mobile 2",
-      value: "+20 103 058 0408",
+      value: "+332 476 761 9494",
       icon: Phone,
     },
   ];
