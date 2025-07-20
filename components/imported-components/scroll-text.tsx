@@ -73,7 +73,7 @@ const RevealText = () => {
                 <div className="w-full h-full relative overflow-hidden flex items-center justify-center">
                   {currentIndex >= 5 && (
                     <img
-                      src="/reveal/img-1.jpg"
+                      src="/reveal/img-1.webp"
                       alt="Creative team collaboration"
                       className="w-full h-full object-cover"
                     />
@@ -95,7 +95,7 @@ const RevealText = () => {
                 <div className="w-full h-full relative overflow-hidden">
                   {currentIndex >= 5 && (
                     <img
-                      src="/reveal/img-2.jpg"
+                      src="/reveal/img-2.webp"
                       alt="Creative team collaboration"
                       className="w-full h-full object-cover"
                     />

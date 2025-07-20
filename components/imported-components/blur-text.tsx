@@ -180,21 +180,17 @@ const AnimatedHeroText: React.FC = () => {
   return (
     <div className="">
       <h1 className="text-[85px] max-[768px]:text-[4.75rem] font-bold text-gray-900 mb-6 leading-none text-center max-[405px]:text-[2.75rem]">
-        <BlurText
-          text="Capturing Moments"
-          delay={100}
-          className="block mb-2"
-        />
+        <BlurText text="Capturing Moments" delay={100} className="block mb-2" />
         <span
-          className={`${allura.className} flex items-center justify-center font-serif text-[#7e22ce] italic`}
+          className={`${allura.className} flex flex-col md:flex-row items-center justify-center font-serif text-[#7e22ce] italic`}
         >
-          <BlurText text="Creating Memories" delay={150} className="mr-4" />
+          <BlurText text="Creating Memories" delay={150} className="mr-4 " />
           <motion.img
             src="hero-sm.jpg"
             alt="Raqeem - رَقيم"
             width={256}
             height={64}
-            className="object-cover h-[64px] rounded-[32px]"
+            className="object-cover h-[64px] rounded-[32px] w-full"
             initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
             transition={{ duration: 0.8, delay: 1.2 }}

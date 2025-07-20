@@ -40,7 +40,7 @@ const Hero = () => {
           <span className="text-[#7e22ce] font-medium mb-2 bg-[#7e22ce]/10 px-4 py-1 rounded-full animate-pulse border-[1px] border-[solid] border-[#7e22ce] px-8 py-2">
             Welcome to Lumina Studio
           </span>
-          <h1 className="text-[85px] max-[768px]:text-[4.75rem] font-bold text-gray-900 mb-6 leading-none text-center max-[405px]:text-[2.75rem]">
+          <h1 className="text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem]  font-bold text-gray-900 mb-6 tracking-[-5px] leading-none text-center">
             <BlurText
               text="Capturing Moments"
               delay={100}
@@ -55,7 +55,7 @@ const Hero = () => {
                 alt="Lumina Studio"
                 width={256}
                 height={64}
-                className="object-cover h-[64px] rounded-[32px]"
+                className="object-cover md:h-[64px] md:rounded-[32px]  w-[8rem] h-[8rem] rounded-[0.5rem]"
                 initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
                 animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
                 transition={{ duration: 0.8, delay: 1.2 }}
@@ -109,22 +109,22 @@ const Hero = () => {
             {
               rotation: "-rotate-12",
               delay: "0s",
-              url: "/hero-gallery/img-1.jpg",
+              url: "/hero-gallery/img-1.webp",
             },
             {
               rotation: "rotate-6",
               delay: "0.2s",
-              url: "/hero-gallery/img-2.jpg",
+              url: "/hero-gallery/img-2.webp",
             },
             {
               rotation: "-rotate-3",
               delay: "0.4s",
-              url: "/hero-gallery/img-3.jpg",
+              url: "/hero-gallery/img-3.webp",
             },
             {
               rotation: "rotate-12",
               delay: "0.6s",
-              url: "/hero-gallery/img-4.jpg",
+              url: "/hero-gallery/img-4.webp",
             },
           ].map((item, i) => (
             <div
