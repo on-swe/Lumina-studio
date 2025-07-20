@@ -38,9 +38,9 @@
     "@radix-ui/react-tooltip": "1.1.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "cmdk": "1.0.4",
+    "cmdk": "1.1.1",
     "embla-carousel-react": "8.5.1",
-    "framer-motion": "^12.18.1",
+    "framer-motion": "^12.23.6",
     "gsap": "^3.13.0",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
@@ -51,12 +51,12 @@
     "react": "^19",
     "react-day-picker": "9.8.0",
     "react-dom": "^19",
-    "react-hook-form": "^7.54.1",
+    "react-hook-form": "^7.60.0",
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.0",
     "sonner": "^1.7.1",
     "tailwind-merge": "^2.5.5",
-    "vaul": "^0.9.6"
+    "vaul": "^1.1.2"
   },
   "devDependencies": {
     "@types/matter-js": "^0.19.8",
