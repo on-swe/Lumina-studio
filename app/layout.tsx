@@ -3,8 +3,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Lumina Studio',
-  description: 'Created with Raqeem - رَقيم ',
-  generator: 'Raqeem - رَقيم ',
+  description: 'Created with Abdelrahman Elrayes',
+  generator: 'Abdelrahman Elrayes',
   icons:{
     icon:'/logo/logo.png'
   }

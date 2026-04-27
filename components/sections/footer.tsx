@@ -115,10 +115,10 @@ const Footer = function () {
             <p>
               Designed and Developed by{" "}
               <Link
-                href="https://raqeem-eg.vercel.app"
+                href="https://elrayes.vercel.app"
                 className="hover:underline"
               >
-                <strong>Raqeem - رَقيم</strong>
+                <strong>Elrayes</strong>
               </Link>
             </p>
           </div>

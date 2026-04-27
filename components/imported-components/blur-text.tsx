@@ -187,7 +187,7 @@ const AnimatedHeroText: React.FC = () => {
           <BlurText text="Creating Memories" delay={150} className="mr-4 " />
           <motion.img
             src="hero-sm.jpg"
-            alt="Raqeem - رَقيم"
+            alt="bg-img"
             width={256}
             height={64}
             className="object-cover h-[64px] rounded-[32px] w-full"
